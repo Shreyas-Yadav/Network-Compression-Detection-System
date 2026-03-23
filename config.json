@@ -1,0 +1,29 @@
+{
+    "server_ip": "10.10.13.161",
+    "client_ip":"10.10.13.144",
+    "standalone":{
+        "COMPRESSION_THRESHOLD":100,
+        "NUM_PACKETS":6000,
+        "UDP_PAYLOAD_SIZE":1000,
+        "RST_TIMEOUT":10,
+        "TCP_HEAD_PORT": 9999,
+        "TCP_TAIL_PORT": 8888,
+        "TTL":255,
+        "UDP_DST_PORT": 8765,
+        "UDP_SRC_PORT":9876,
+        "inter_measurement_time":15
+    },
+    "pre_probing":{
+        "client_port":7777
+    },
+    "probing":{
+        "UDP_source_port":9876,
+        "UDP_destination_port": 8765,
+        "packet_size":1000,
+        "inter_measurement_time":15,
+        "number_of_packets": 6000 
+    },
+    "post_probing":{
+        "port":6666
+    }
+}
